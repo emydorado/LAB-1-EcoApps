@@ -1,0 +1,283 @@
+.title {
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 1.5em;
+}
+.dropdown {
+	min-width: 15em;
+	position: relative;
+	margin: 2em;
+}
+.dropdown * {
+	box-sizing: border-box;
+}
+
+.select {
+	background: #323741;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 2px #323741 solid;
+	border-radius: 0.5em;
+	padding: 1em;
+	cursor: pointer;
+	transition: 0.3s;
+	width: 20em;
+}
+
+.selected-clicked {
+	border: 2px #26489a solid;
+	box-shadow: 0 0 0 0.8em #26489a;
+}
+
+.select:hover {
+	background: #323741;
+}
+
+.caret {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 6px solid #fff;
+	transition: 0.3s;
+}
+
+.caret-rotate {
+	transform: rotate(180deg);
+	transition: transform 0.3s;
+}
+
+.filters,
+.buttons {
+	display: flex;
+	align-items: center;
+}
+
+.todo {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#LimitInput,
+#SearchInput {
+	background: #323741;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 2px #323741 solid;
+	border-radius: 0.7em;
+	padding: 1.3em;
+	cursor: pointer;
+	transition: 0.3s;
+	width: 20em;
+	margin-left: 3em;
+}
+
+#LimitInput:hover,
+#SearchInput:hover {
+	background: #323741;
+}
+
+#LimitInput::placeholder,
+#SearchInput::placeholder {
+	color: #fff;
+	font-size: 16px;
+}
+
+#LimitInput:focus,
+#SearchInput:focus {
+	outline: #323741;
+}
+
+#buttonSearch,
+#buttonClear {
+	background: #26489a;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px #26489a solid;
+	border-radius: 0.7em;
+	padding: 1em;
+	cursor: pointer;
+	transition: 0.3s;
+	width: 10em;
+	margin-left: 1em;
+	font-size: 16px;
+}
+
+#buttonSearch:hover,
+#buttonClear:hover {
+	background: #1e3979;
+	border: 2px #1e3979 solid;
+}
+
+.menu {
+	list-style: none;
+	padding: 0.2em 0.5em;
+	box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+	border-radius: 0.5em;
+	color: #9fa5b5;
+	position: absolute;
+	top: 3em;
+	width: 20em;
+	opacity: 0;
+	display: none;
+	transition: 0.2s;
+	z-index: 1;
+}
+
+li {
+	padding: 0.7em 0.5em;
+	margin: 0.3em 0;
+	border-radius: 0.5em;
+	cursor: pointer;
+}
+
+li:hover {
+	background: #1d233382;
+}
+
+.active {
+	background: #1d2333;
+}
+
+.menu-open {
+	display: block;
+	opacity: 1;
+	background-color: #252c3d;
+}
+
+.filtro {
+	display: none;
+}
+
+.item {
+	background-color: #171c29;
+	color: #fff;
+	width: 23em;
+	border-radius: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2em;
+}
+
+.item img {
+	height: 15em;
+	margin-top: 2em;
+	margin-bottom: 3em;
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+.item h3 {
+	margin: 0;
+}
+
+.item h1 {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	font-size: 30px;
+}
+
+#data-container {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.loading {
+	color: #ffffffb5;
+	size: 16px;
+	margin: 2em;
+}
+.user {
+	background-color: #323741;
+	color: #fff;
+	size: 16px;
+	border-radius: 1em;
+	display: flex;
+	align-items: center;
+	margin: 1em;
+}
+
+#fetchUser-button {
+	font-weight: bold;
+	background-color: #26489a;
+	color: #fff;
+	border-radius: 2em;
+	height: 2em;
+	width: 2em;
+	font-size: 20px;
+	border: #9fa5b5;
+	transition: 0.3s;
+	margin-left: 2em;
+}
+
+#fetchUser-button:hover {
+	background-color: #1e3979;
+}
+
+.apiUser {
+	display: flex;
+	align-items: center;
+}
+
+.cat {
+	background-color: #323741;
+	color: #fff;
+	size: 16px;
+	border-radius: 1em;
+	display: flex;
+	align-items: center;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.subtitle {
+	color: #fff;
+	size: 16px;
+	border-radius: 1em;
+	display: flex;
+	align-items: center;
+	margin-left: 2em;
+}
+
+.subtitlee {
+	color: #fff;
+	font-size: 26px;
+	border-radius: 1em;
+	display: flex;
+	font-weight: bold;
+	align-items: center;
+	margin-left: 1.3em;
+}
+
+.subtitleAnime {
+	color: #fff;
+	font-size: 26px;
+	border-radius: 1em;
+	display: flex;
+	font-weight: bold;
+	align-items: center;
+	margin-left: 2em;
+	margin-top: 2.3em;
+}
+
+.apis {
+	display: flex;
+	flex-direction: column;
+	background-color: #323741;
+	border-radius: 1em;
+	margin: 3em;
+}

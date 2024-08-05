@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Fetch API Example</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #252c3d;
+			}
+			#data-container {
+				margin-top: 20px;
+			}
+			.item {
+				margin-bottom: 10px;
+			}
+			img {
+				max-width: 300px;
+				border: 2px solid #ccc;
+				border-radius: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class="title">API Generator</h1>
+
+		<div class="apis">
+			<div class="apiUser">
+				<h3 class="subtitlee">Get an user and his fav cat fact</h3>
+				<button id="fetchUser-button">+</button>
+			</div>
+
+			<div class="dataUser-container"></div>
+
+			<div class="dataCat-container"></div>
+		</div>
+
+		<p class="subtitleAnime">Search an Anime</p>
+		<section class="todo">
+			<section class="filters">
+				<input id="LimitInput" type="number" placeholder="Limit number" />
+				<input id="SearchInput" type="text" placeholder="Search" />
+
+				<section class="dropdown">
+					<div class="select">
+						<span class="selected">Type</span>
+						<div class="caret"></div>
+					</div>
+					<ul class="menu">
+						<li class="active">tv</li>
+						<li>movie</li>
+						<li>ova</li>
+						<li>special</li>
+						<li>ona</li>
+						<li>music</li>
+						<li>cm</li>
+						<li>pv</li>
+						<li>tv_special</li>
+					</ul>
+				</section>
+			</section>
+
+			<section class="buttons">
+				<button id="buttonSearch">Search Anime</button>
+				<button id="buttonClear">Clear</button>
+			</section>
+		</section>
+		<div id="data-container"></div>
+
+		<script src="index.js"></script>
+	</body>
+</html>
